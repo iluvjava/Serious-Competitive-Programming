@@ -1,0 +1,101 @@
+{
+  "main": {
+    "id": "287ca1f023d5f270",
+    "type": "split",
+    "children": [
+      {
+        "id": "f1b8488f0174e99a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Graphs/Ordering.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9e823b54b8b52ee6",
+    "type": "split",
+    "children": [
+      {
+        "id": "8a50bbb189f030cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3fbf512e21ec597f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "63e7d5df9ca6e6e4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "03f3db0950160082",
+    "type": "split",
+    "children": [
+      {
+        "id": "be474ece751b83fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bab1b02bff42fe4a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Graphs/Ordering.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f1b8488f0174e99a",
+  "lastOpenFiles": [
+    "Graphs/Ordering.md",
+    "Graphs/Graphs.md",
+    "Graphs/Graph and Relations.md",
+    "Algorithms/Dynamic Programming.md",
+    "Algorithms/Floyd Warshall Path.md",
+    "Algorithms/Depth First Search.md",
+    "Mathematical Exploits.md",
+    "Algorithms/Breadth First Seach.md",
+    "Algorithms/Bellmand Ford.md"
+  ]
+}

@@ -47,7 +47,9 @@ $$
 
 Now, one would have to improve this from left to right to get the solution that uses only constant memory. 
 
+
 ---
 ### **The Constant Memory**
 
+Hm....
 
