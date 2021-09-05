@@ -1,5 +1,6 @@
 
-# Dynamic Programming
+---
+# **Dynamic Programming**
 * Practices include: 
 	* Linear Recurrence: [[Max-Array-Sum]]., Hackerrank
 	* Edit Distance: [[Abbreviation]], Hackerrank
@@ -12,7 +13,8 @@
 	* Find Maximal sum of Continuous sub array: [[Maximal Subarray]]
 	* Finding the shortest contiguous substring containing a given sequence: [[Minimum Window Subsequence]]
 
-## Introduction
+---
+## **Introduction**
 * DP is developed during the WWII in the last century, and its central theme is the **optimal structure** exploitation. 
 * A problem is said to have optimal structure if, the the solution of the whole problem contain solutions sub-problems, where sub-problems are problems but with a smaller inputs. 
   * **For example**, consider the weighted interval scheduling problem. An interval scheduling problem gives a list of intervals on a time line, each with a specific weight associated to it, and the task is to look for the set of intervals such that, the weightis maximal and there are no conflicts to the set of intervals.
@@ -30,7 +32,8 @@
 		  * Most recent occurance of the certain character to the left/right of the current letter in the string. 
 	  * Take the **Prefx Array Sum** for example, when we sum up the whole array, we will sum up the partial array, and hence, the partial sum of the and the sum of the whole array forms an optimal structure, which might be leverage to solve problem efficiently. 
 
-## Notable Exploits
+---
+## **Notable Exploits**
 
 * Prefix sum, while iterating through the array, 1d, or 2d, stores the partial sum of the array in another array. 
 * Longest Common Substring: 
@@ -50,7 +53,8 @@
 			* [[Trapping-Rain-Water]]
 			* [[Sliding Window Maximum]]
 
-## The Approach
+---
+## **The Approach**
 * Recursion, but brute forces. 
 * If Dynamic Programming is applicable, then there will be repeated subproblems being solved, which can be stored using a datastructure to save run-time for the algorithm. 
 	* This is Memoization
@@ -58,15 +62,20 @@
 * Most Commonly use data structure is: "Hash Map"
 * [[Stackify Recursive Functions]]
 
-## Noble Applications of Dynamic Programming
+---
+## **Noble Applications of Dynamic Programming**
  1. Edit Distance of String
  2. Computing Hidden Markov Chain
  3. Longest Common Subsequence
  4. Largest Empty Square
  5. TSP: Kelp Harp Algorithm
  6. Bellman Ford Sortest Path: Edge Relaxation
+ 7. Floyd Warshall Algorithm 
+ 8. Knapsack Problem
+ 9. Trapping Water
 
-## Divide and Conquer
+---
+## **Divide and Conquer**
 * Divided and Conquer is a special case of Dynamic programming where, we only need k, optimal soluitons, all with very similar sizes to reconstruct the solution to a larger problem. 
 * **Noble Applications**: 
 	* Merge Sort
@@ -75,8 +84,10 @@
 	*  Karatsuba Algorithm
 	*  Convex Hull
 	*  Voronoi Diagram Generation
+	
 
-## Some Involved Examples
+---
+## **Some Involved Examples**
 * Given a set of items with profits and weight, and a knapsack with a capacity, we want to maximize the profits without exceeding the weight constraint.
 * Knapsack but all items has the same value, by which I mean the weights and profits equal to each other.
 * Consider a set of items where we want to take as many items as possible within a weight constraint.

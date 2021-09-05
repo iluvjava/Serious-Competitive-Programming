@@ -36,4 +36,10 @@ Output: [-1]
 * Let Inorder traversal array be $I$ and pre order traversal array be $P$. 
 * Let current element we are looking at for both array be at $i, j$. 
 * Increment $i$ from $0$ until $I[i] == P[j]$
+  * Then $I[i + 1], I[i + 2]$ are children of $P[j]$, (Note, they can be null, or we just skipped it, this is not good.)
+  * $I[i - 1]$ is the parent of $P[j]$. 
+  * Link $P[j]$ to $I[i - 1]$. 
+
+
+
 

@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Graphs/Ordering.md",
-            "mode": "preview"
+            "file": "Problems/Increasing Triplet Subsequence.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Graphs/Ordering.md",
+                "file": "Problems/Increasing Triplet Subsequence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,14 +88,15 @@
   },
   "active": "f1b8488f0174e99a",
   "lastOpenFiles": [
+    "Problems/Increasing Triplet Subsequence.md",
+    "Problems/Longest Increasing Subsequence.md",
+    "Problems/Longest Common Subsequence.md",
+    "lognest.md",
+    "Problems/Subset Sum Equal.md",
+    "Array-Manipulations.md",
+    "Problems/Untitled.md",
     "Graphs/Ordering.md",
     "Graphs/Graphs.md",
-    "Graphs/Graph and Relations.md",
-    "Algorithms/Dynamic Programming.md",
-    "Algorithms/Floyd Warshall Path.md",
-    "Algorithms/Depth First Search.md",
-    "Mathematical Exploits.md",
-    "Algorithms/Breadth First Seach.md",
-    "Algorithms/Bellmand Ford.md"
+    "Graphs/Graph and Relations.md"
   ]
 }
