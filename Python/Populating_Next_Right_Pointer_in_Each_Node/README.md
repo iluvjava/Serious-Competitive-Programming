@@ -20,6 +20,8 @@ Initially, all next pointers are set to NULL.
 
 **Example 1:**
 
+![](../img2.png)
+
 ```
 Input: root = [1,2,3,4,5,6,7]
 Output: [1,#,2,3,#,4,5,6,7,#]
@@ -76,5 +78,6 @@ while (Parent.next is not None):
     LeftMost.next = Parent.left
 ```
 
-
 And that is about it, use these components to code it in and you will be good to go. 
+
+
