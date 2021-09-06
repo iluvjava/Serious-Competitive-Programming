@@ -14,7 +14,7 @@ Output: [3,9,20,null,null,15,7]
 
 **Example 2:**
 ```
-Input: preorder = [-1], inorder = [-1]
+Input: preorder = [-1], inorder = [-1
 Output: [-1]
 ```
 
@@ -29,17 +29,53 @@ Output: [-1]
 * inorder is guaranteed to be the inorder traversal of the tree.
 
 ---
-### **Appraoch**
+### **Approach**
 
-> Pre order traversale is the path it takes to go to the leaf node. In order Traversal start with the left node and construct from bottom to up, from left to right. 
+> Understand pre-order, in-order traversal and then use recursion. 
 
-* Let Inorder traversal array be $I$ and pre order traversal array be $P$. 
-* Let current element we are looking at for both array be at $i, j$. 
-* Increment $i$ from $0$ until $I[i] == P[j]$
-  * Then $I[i + 1], I[i + 2]$ are children of $P[j]$, (Note, they can be null, or we just skipped it, this is not good.)
-  * $I[i - 1]$ is the parent of $P[j]$. 
-  * Link $P[j]$ to $I[i - 1]$. 
+Fix a node root $r$ in Pre-order traversal array $P$, then there exists the same node in the In-order traversal array $I$, and the following can be said: 
 
+$$
+\begin{aligned}
+    P & = [r, *[L(r)], *[R(r)]]
+    \\
+    I &= [*[L(r)], r, *[R(r)]]
+\end{aligned}
+$$
 
+Where, $L(r)$, $R(r)$ are the left and the right sub tree of the given node $r$. And it's denotede as $*[\bullet]$ to represent the action of upacking a array. 
 
+**The recursive Solution**
 
+To solve the problem, we need to identify the root and then recur on the left and right subtrees of the root. 
+
+**Observe:**
+
+> For unique value in Pre-order traversal array, find it in the other in-order traversal array which then locates the left sub-tree and right sub tree, split it and recur, and locate on the next element in the Pre-order Traversal. 
+
+**This is the python implementation**
+
+```python
+def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+    
+    
+    def BuildRecur(left, right): # build tree using left and right boundary. 
+        nonlocal PreorderIdx
+        if left > right: 
+            return None
+        RootVal = preorder[PreorderIdx] 
+        Root = TreeNode(RootVal)
+        PreorderIdx += 1
+        Root.left = BuildRecur(left, InOrderIdxMap[RootVal] - 1) 
+        Root.right = BuildRecur(InOrderIdxMap[RootVal] + 1, right)
+        return Root
+    
+    InOrderIdxMap = {}  # Mapping value of node to index in In-order traversal. 
+                        # This is needed for quick look up. 
+    PreorderIdx = 0
+    for Idx, Val in enumerate(inorder):
+        InOrderIdxMap[Val] = Idx
+    
+    return BuildRecur(0, len(preorder) - 1)
+
+```
