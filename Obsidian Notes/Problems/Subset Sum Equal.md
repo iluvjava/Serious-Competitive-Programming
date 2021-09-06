@@ -13,14 +13,16 @@ Let $\text{T}[i, k]$ be a state function, denoting a boolean, representing wheth
 Let the array be $\text{A}$, with size $n$. 
 
 $$
-\text{T}[i, k] := \mathbf{1}\lbrace\exist S\in \{1, 2, 3, \cdots, n\} \text{ s.t: } \sum_{j\in S}^{}\text{A}[j] = k\rbrace
+\text{T}[i, k] := \mathbf{1}\left\lbrace
+        \exist S\subseteq \{1, 2, 3, \cdots, i\} \text{ s.t: } \sum_{j\in S}^{}\text{A}[j] = k
+    \right\rbrace
 $$
 
 Recursion is: 
 
 > $$
 > \text{T}[i, k] = \left(
-    \bigvee_{j = 0}^{i - 1} T[j, k - A[i]] 
+    \bigvee_{j = 1}^{i - 1} T[j, k - A[i]] 
 \right)\vee \mathbf{1}\{A[i] = k\} \vee \text{T}[j - 1, k]
 > $$
 
