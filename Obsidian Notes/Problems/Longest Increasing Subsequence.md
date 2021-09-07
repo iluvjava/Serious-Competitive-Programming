@@ -8,7 +8,7 @@ Given an array of integer, look for a subset of indices and keeping the order su
 
 > $$
 > \max_{S\subseteq [n]} \left\lbrace
->     |S| \text{ s.t: } \forall 1\le i < |S| \; \text{A}[S[i]] < A[S[i + 1]]
+>     |S| \text{ s.t: } \forall\; 1\le i < |S| \; \text{A}[S[i]] < A[S[i + 1]]
 > \right\rbrace
 > $$
 

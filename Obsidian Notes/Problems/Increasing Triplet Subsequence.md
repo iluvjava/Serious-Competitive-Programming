@@ -7,7 +7,7 @@
 Given sequence $A$, try figuring out: 
 
 > $$
-> \exist? 1 \le i < j < k \le n: A[i] <A[j] <A[k]
+> \exists? 1 \le i < j < k \le n: A[i] <A[j] <A[k]
 > $$
 
 
@@ -130,9 +130,9 @@ $$
     \\
     & \hspace{1.1em}
     \begin{aligned}
-        & \text{update } a^{(k)} \text{ Using } a^{(k - 1)}
+        & \text{update } a^{(k)} \text{ using } a^{(k - 1)}
         \\
-        & \text{update } b^{(k)} \text{ Using } b^{(k - 1)}
+        & \text{update } b^{(k)} \text{ using } b^{(k - 1)}
         \\
         & \text{if } A[k] > b^{(k)}: 
         \\
